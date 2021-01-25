@@ -1,11 +1,14 @@
-import React,{useRef} from 'react';
+import React,{useRef,useState} from 'react';
 import './post.css'
-import FavoriteBorderOutlinedIcon from '@material-ui/icons/FavoriteBorderOutlined';
-import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
-import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
+import Checkbox from '@material-ui/core/Checkbox';
+import Favorite from '@material-ui/icons/Favorite';
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder';import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
+import InsertCommentOutlinedIcon from '@material-ui/icons/InsertCommentOutlined';
 import BookmarkBorderIcon from '@material-ui/icons/BookmarkBorder';
+import BookmarkIcon from '@material-ui/icons/Bookmark';
 
 function Post ({userImg, userName, postImg, caption, likes, time, account}){
+    const [Liked,setLiked] = useState(false)
     const comments = useRef();
 
     const handleSubmit = (e)=>{
@@ -22,6 +25,14 @@ function Post ({userImg, userName, postImg, caption, likes, time, account}){
         }       
     }
 
+    const handleLike = ()=>{
+        setLiked(!Liked)
+    }
+
+    const handleLikeOnchage = ()=>{
+        setLiked(!Liked)
+    }
+
     return(
         <article className="post">
             <section className="post__container-img-name">
@@ -29,16 +40,16 @@ function Post ({userImg, userName, postImg, caption, likes, time, account}){
                 <h2 className="post__user-name" >{userName}</h2>
             </section>    
 
-            <img className="post__post-img" src={postImg} alt="post"/>
+            <img className="post__post-img" src={postImg} alt="post" onDoubleClick={handleLike}/>
                 
             <section className="post__icons">
                 <div  className="post__icons-one">
-                    <FavoriteBorderOutlinedIcon />
-                    <ChatBubbleOutlineIcon />
-                    <SendOutlinedIcon />
+                    <Checkbox icon={<FavoriteBorder />} checkedIcon={<Favorite />}  checked={Liked} onChange={handleLikeOnchage}/>
+                    <Checkbox icon={<InsertCommentOutlinedIcon />} checkedIcon={<InsertCommentOutlinedIcon color="action"/>} />
+                    <Checkbox icon={<SendOutlinedIcon />} checkedIcon={<SendOutlinedIcon color="action"/>} />
                 </div>
-
-                <BookmarkBorderIcon />
+                <Checkbox icon={<BookmarkBorderIcon />} checkedIcon={<BookmarkIcon color="action" />} />
+                
             </section>
 
             <p className="post__likes">{likes} Me Gusta</p>
