@@ -1,5 +1,8 @@
 # Instagram clone app
 
+### Demo:
+https://festive-northcutt-a00392.netlify.app/
+
 In the project directory, you can run:
 
 ### `npm install`
