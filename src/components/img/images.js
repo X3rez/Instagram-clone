@@ -3,7 +3,7 @@
 const images = [
     {
         user:'papazachariasa',
-        userImg:'https://cdn.pixabay.com/user/2019/06/06/14-40-36-354_250x250.jpg',
+        userImg:'https://www.cnet.com/a/img/b-Q-FHWztntPmrzVo78pEVdo_2c=/2018/04/12/1c70d503-4b5f-4756-841d-ed1c50007dc8/gettyimages-746075097.jpg',
         url:'https://cdn.pixabay.com/photo/2020/11/01/20/14/sunset-5704869_960_720.jpg'
     },
     {
@@ -12,8 +12,8 @@ const images = [
         url:'https://cdn.pixabay.com/photo/2020/10/23/16/50/woman-5679284_960_720.jpg'
     },
     {
-        user:'icsilviu',
-        userImg:'https://cdn.pixabay.com/user/2019/11/25/19-58-55-271_250x250.jpg',
+        user:'ElTiguer',
+        userImg:'https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/324/419665d2-74b7-49d4-b3c8-3aea253f966f.jpg',
         url:'https://cdn.pixabay.com/photo/2020/10/06/05/15/girl-5631246_960_720.jpg'
     },
     {
@@ -28,7 +28,7 @@ const images = [
     },
     {
         user:'terrianneallen',
-        userImg:'https://cdn.pixabay.com/user/2020/06/16/13-36-55-426_250x250.jpeg',
+        userImg:'https://st.depositphotos.com/2069323/2156/i/600/depositphotos_21568785-stock-photo-man-pointing.jpg',
         url:'https://cdn.pixabay.com/photo/2020/09/18/12/16/jewel-beetle-5581683_960_720.jpg'
     },
     {
