@@ -3,7 +3,7 @@
 const images = [
     {
         user:'papazachariasa',
-        userImg:'https://www.cnet.com/a/img/b-Q-FHWztntPmrzVo78pEVdo_2c=/2018/04/12/1c70d503-4b5f-4756-841d-ed1c50007dc8/gettyimages-746075097.jpg',
+        userImg:'https://cdn.pixabay.com/user/2021/02/03/11-27-56-809_250x250.png',
         url:'https://cdn.pixabay.com/photo/2020/11/01/20/14/sunset-5704869_960_720.jpg'
     },
     {
@@ -13,7 +13,7 @@ const images = [
     },
     {
         user:'ElTiguer',
-        userImg:'https://d25rq8gxcq0p71.cloudfront.net/dictionary-images/324/419665d2-74b7-49d4-b3c8-3aea253f966f.jpg',
+        userImg:'https://cdn.pixabay.com/user/2021/03/08/19-47-06-54_250x250.jpg',
         url:'https://cdn.pixabay.com/photo/2020/10/06/05/15/girl-5631246_960_720.jpg'
     },
     {
@@ -23,7 +23,7 @@ const images = [
     },
     {
         user:'kokygonzalez',
-        userImg:'https://cdn.pixabay.com/user/2020/04/02/14-35-09-390_250x250.jpg',
+        userImg:'https://cdn.pixabay.com/user/2021/08/05/18-49-51-518_250x250.jpg',
         url:'https://cdn.pixabay.com/photo/2020/05/24/06/54/dumbo-5212670_960_720.jpg'
     },
     {
